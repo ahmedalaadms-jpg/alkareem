@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-< lang="en">
-<head>
-    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +39,7 @@
             let page = i;
             document.getElementById("quran").innerHTML += `
                 <div class="surah">
-                    <img src="${page}.png" alt="Quran Page">
+                    <img src="png-d150/${page}.png">
                 </div>
             `;
         }
@@ -50,20 +47,3 @@
 
 </body>
 </html>
-
-    
-</head>
-
-    
-    <div id="quran"></div>
-
-    <script>
-    for (let i = 1; i <= 604; i++) {
-        let page = i; // your images are named 1.png, 2.png, 3.png...
-        document.getElementById("quran").innerHTML += `
-            <div class="surah">
-                <img src=""${page}.png"" width="400">
-            </div>
-        `;
-    }
-</script>
