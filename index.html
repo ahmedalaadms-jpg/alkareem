@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alkareem</title>
+
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .surah {
+            margin: 30px auto;
+        }
+
+        .surah img {
+            width: 400px;
+            display: block;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+    
+</head>
+<body>
+    
+    <div id="quran"></div>
+
+    <script>
+    for (let i = 1; i <= 604; i++) {
+        let page = i; // your images are named 1.png, 2.png, 3.png...
+        document.getElementById("quran").innerHTML += `
+            <div class="surah">
+                <img src="png-d150/${page}.png" width="400">
+            </div>
+        `;
+    }
+</script>
+
+</body>
+</html>
