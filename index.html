@@ -1,34 +1,59 @@
 <!DOCTYPE html>
+< lang="en">
+<head>
+    <!DOCTYPE html>
 <html lang="en">
-<head><head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alkareem</title>
+    <title>Alkareem</title>
 
     <style>
         body {
-            background: #f7f7f7;
-            font-family: Arial, sans-serif;
+            margin: 0;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #quran {
+            width: 100%;
+            max-width: 600px;
             text-align: center;
         }
 
-        .surah {
-            margin: 30px auto;
-        }
-
         .surah img {
-            width: 400px;
-            display: block;
-            margin: auto;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 600px;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
+<body>
+
+    <div id="quran"></div>
+
+    <script>
+        for (let i = 1; i <= 604; i++) {
+            let page = i;
+            document.getElementById("quran").innerHTML += `
+                <div class="surah">
+                    <img src="png-d150/${page}.png" alt="Quran Page">
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
+
     
 </head>
-<body>
+
     
     <div id="quran"></div>
 
@@ -42,6 +67,3 @@
         `;
     }
 </script>
-
-</body>
-</html>
